@@ -1,0 +1,15 @@
+MD5 Hash Cracking Result
+
+Hash Type: MD5
+Cracked Password: password
+
+Status: Successfully cracked using dictionary attack with John the Ripper
+
+
+SHA-1 Hash Cracking Result
+
+Hash Type: SHA-1
+Cracked Password: admin123
+
+Status: Successfully cracked using dictionary attack with John the Ripper
+
