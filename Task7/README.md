@@ -4,6 +4,10 @@
 README.md
 Report/
  └── DVWA_Vulnerability_Report.pdf
+Screenshots/
+ └── burp_proxy.png
+ └── SQL_Injection.png
+ └── XSS.png
 
 ## Objective
 This project demonstrates vulnerability assessment using DVWA and Burp Suite.
