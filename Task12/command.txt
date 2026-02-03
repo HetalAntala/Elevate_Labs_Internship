@@ -1,0 +1,12 @@
+sudo service rsyslog start
+sudo service ssh start
+
+cat /var/log/auth.log
+tail -f /var/log/auth.log
+
+grep "Failed password" /var/log/auth.log
+grep "Accepted password" /var/log/auth.log
+grep "authentication failure" /var/log/auth.log
+
+grep "Failed password" /var/log/auth.log | wc -l
+grep "Failed password" /var/log/auth.log | awk '{print $11}'
