@@ -1,0 +1,78 @@
+LINUX SERVER HARDENING COMMANDS – CYBER SECURITY INTERNSHIP TASK 14
+
+# ===============================
+# System Update
+# ===============================
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
+
+# ===============================
+# User & Group Review
+# ===============================
+cat /etc/passwd
+cut -d: -f1 /etc/passwd
+getent group sudo
+
+# Remove unused user
+sudo deluser username
+
+# Add user to sudo (least privilege)
+sudo usermod -aG sudo hetal
+
+# ===============================
+# SSH Hardening
+# ===============================
+sudo nano /etc/ssh/sshd_config
+# Set:
+# PermitRootLogin no
+# PasswordAuthentication no
+
+sudo systemctl restart ssh
+
+# Generate SSH key
+ssh-keygen -t rsa -b 4096
+ssh-copy-id user@localhost
+
+# ===============================
+# Firewall Configuration
+# ===============================
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 22
+sudo ufw enable
+sudo ufw status verbose
+
+# ===============================
+# Disable Unnecessary Services
+# ===============================
+systemctl list-unit-files --type=service --state=enabled
+sudo systemctl disable bluetooth
+sudo systemctl stop bluetooth
+
+# ===============================
+# File Permissions
+# ===============================
+sudo chmod 700 /root
+sudo chmod 600 ~/.ssh/authorized_keys
+sudo chmod 644 /etc/passwd
+sudo chmod 600 /etc/shadow
+
+# ===============================
+# Automatic Updates
+# ===============================
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure unattended-upgrades
+
+# ===============================
+# Security Audit (Lynis)
+# ===============================
+sudo apt install lynis -y
+sudo lynis audit system
+
+# ===============================
+# Log Monitoring (Kali/Linux)
+# ===============================
+sudo journalctl -f
+sudo journalctl -u ssh
+sudo journalctl | grep Failed
+sudo journalctl | grep sudo
