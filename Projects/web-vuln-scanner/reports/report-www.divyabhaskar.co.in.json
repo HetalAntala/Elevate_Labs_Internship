@@ -1,0 +1,24 @@
+{
+  "target": "http://www.divyabhaskar.co.in",
+  "vulnerabilities": [
+    {
+      "type": "CSRF",
+      "severity": "Medium",
+      "url": "http://www.divyabhaskar.co.in/search",
+      "payload": "",
+      "evidence": "No CSRF token found"
+    },
+    {
+      "type": "CSRF",
+      "severity": "Medium",
+      "url": "http://www.divyabhaskar.co.in/search",
+      "payload": "",
+      "evidence": "No CSRF token found"
+    }
+  ],
+  "headers": {
+    "CSP": null,
+    "X-Frame-Options": "SAMEORIGIN",
+    "HSTS": "max-age=3600; includeSubDomains; preload"
+  }
+}

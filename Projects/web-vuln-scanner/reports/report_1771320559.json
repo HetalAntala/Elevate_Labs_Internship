@@ -1,0 +1,36 @@
+{
+  "target": "https://jguni.in/",
+  "risk_score": 7,
+  "rating": "Medium",
+  "counts": {
+    "Critical": 0,
+    "High": 0,
+    "Medium": 2,
+    "Low": 1,
+    "Info": 0
+  },
+  "total_findings": 3,
+  "vulnerabilities": [
+    {
+      "type": "Missing CSP",
+      "severity": "Medium",
+      "payload": "",
+      "url": "https://jguni.in/",
+      "evidence": "Content-Security-Policy not set"
+    },
+    {
+      "type": "Clickjacking Risk",
+      "severity": "Medium",
+      "payload": "",
+      "url": "https://jguni.in/",
+      "evidence": "X-Frame-Options missing"
+    },
+    {
+      "type": "HSTS Missing",
+      "severity": "Low",
+      "payload": "",
+      "url": "https://jguni.in/",
+      "evidence": "Strict-Transport-Security not set"
+    }
+  ]
+}
