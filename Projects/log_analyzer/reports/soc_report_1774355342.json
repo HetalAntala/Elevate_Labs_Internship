@@ -1,0 +1,60 @@
+{
+    "time": "Tue Mar 24 17:59:02 2026",
+    "alerts": [
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "DoS",
+            "ip": "192.168.1.1",
+            "risk": 70
+        },
+        {
+            "type": "Scanning",
+            "ip": "192.168.1.1",
+            "risk": 40
+        },
+        {
+            "type": "Brute Force",
+            "ip": "192.168.1.100",
+            "risk": 100
+        },
+        {
+            "type": "Brute Force",
+            "ip": "192.168.1.100",
+            "risk": 100
+        },
+        {
+            "type": "DoS",
+            "ip": "192.168.1.100",
+            "risk": 100
+        },
+        {
+            "type": "Brute Force",
+            "ip": "192.168.1.100",
+            "risk": 100
+        }
+    ]
+}
